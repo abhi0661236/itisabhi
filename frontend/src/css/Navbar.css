@@ -1,0 +1,37 @@
+
+
+.nav-panel{
+    position: absolute;
+   
+    width: 100%;
+    
+    
+    background-color: gray;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.nav-panel ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.nav-panel ul li{
+    list-style: none;
+    list-style: none;
+background-color: yellow;
+
+border-radius: 50%;
+width: 40px;
+height: 40px;
+position: relative;
+}
+.nav-panel ul li>i{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.nav-panel ul li>span{
+    display: none;
+}
