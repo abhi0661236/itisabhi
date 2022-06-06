@@ -1,12 +1,7 @@
-
+@import url(./color.css);
 
 .nav-panel{
-    position: absolute;
-   
-    width: 100%;
-    
-    
-    background-color: gray;
+    position: fixed;width: 100%;background-color: #313131;
     right: 0px;
     left: 0px;
     bottom: 0px;
@@ -18,20 +13,34 @@
 }
 
 .nav-panel ul li{
+    
     list-style: none;
-    list-style: none;
-background-color: yellow;
+    background-color: rgb(80, 80, 80);
 
 border-radius: 50%;
 width: 40px;
 height: 40px;
 position: relative;
 }
-.nav-panel ul li>i{
+.nav-panel ul li:hover{
+    background-color: var(--navLink);
+    color: #313131;
+    cursor: pointer;
+    /* border: 2px solid #808080; */
+}
+.nav-panel ul li:active{
+    background-color: var(--navLink);
+    color: #242424;
+    cursor: pointer;
+    /* border: 2px solid #808080; */
+}
+.nav-panel ul li a>i{
+    color: white;
+    text-decoration: none;
     position: absolute;
     top: 30%;
     left: 30%;
 }
-.nav-panel ul li>span{
+.nav-panel ul li a>span{
     display: none;
 }

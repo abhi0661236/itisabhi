@@ -1,16 +1,18 @@
 import React from 'react';
 import '../css/Navbar.css';
+import {Link} from 'react-router-dom';
 
 function Navbar() {
   return (
     <div className='nav-panel'>
         <nav>
             <ul>
-                <li><span>Home</span> <i className="fa-solid fa-house-chimney"></i></li>
-                <li><span>About</span> <i className="fa-solid fa-user"></i></li>
-                <li><span>Contact</span> <i className="fa-solid fa-envelope-open"></i></li>
-                <li><span>Portfolio</span> <i className="fa-solid fa-briefcase"></i></li>
-                <li><span>Blogs</span> <i className="fa-solid fa-book-open-reader"></i></li>
+                {/* <li><Link to="Home/" element={Home} /></li> */}
+                <li><Link to='/'><span>Home</span> <i className="fa-solid fa-house-chimney"></i></Link></li>
+                <li><Link to='/about'><span>About</span> <i className="fa-solid fa-user"></i></Link></li>
+                <li><Link to='/portfolio'><span>Portfolio</span> <i className="fa-solid fa-briefcase"></i></Link></li>
+                <li><Link to='/contact'><span>Contact</span> <i className="fa-solid fa-envelope-open"></i></Link></li>
+                <li><Link to='/blogs'><span>Blogs</span> <i className="fa-solid fa-book-open-reader"></i></Link></li>
             </ul>
         </nav>
     </div>
