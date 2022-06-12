@@ -1,4 +1,8 @@
 @import url(./color.css);
+::selection{
+  background-color: var(--navLink);
+  color: var(--primary);
+}
 body {
   margin: 0px;
   padding: 0px;

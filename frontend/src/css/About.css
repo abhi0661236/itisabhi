@@ -34,10 +34,26 @@ padding: 50px 0px;
 
 .info-card-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 40px;
     column-gap: 10px;
     row-gap: 10px;
+    text-align: left;
+}
+
+
+
+@media (max-width: 912px) {
+    .info-card-container{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+}
+@media (max-width: 412px) {
+    .info-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
 }
 .info-card{
     transition: .9s all ease;
@@ -52,5 +68,5 @@ padding: 50px 0px;
     transition: .9s all ease;
 }
 .info-card:hover h4{
-    margin-left: 75px;
+    margin-left: 20px;
 }

@@ -1,22 +1,25 @@
 .home-container{
     background-color: rgb(29, 29, 29);
-    height: 100vh;
+    display: flex;
+    margin-top: 22%;
+    padding: 0px 140px;
+    justify-content: space-between;
 }
 
 .hero-image img{
-    max-width: 200px;
+    width: 200px;
     height: auto;
-    border-radius: 50%;
     border: 4px solid var(--secondary);
     position: relative;
-    top: 50%;
-    left: 50%;
-    margin-left: -115px;
-    margin-top: 50px;
+    
+}
+.hero-container{
+    width: 36%;
 }
 .hero-description{
     line-height: 29px;
     text-align: center;
+    width: 60%;
 }
 .hero-description h1{
     font-size: 29px;
@@ -55,3 +58,64 @@ button {
       background-color: var(--navLink);
       color: var(--secondary);
   }
+
+
+@media (max-width: 912px) {
+    .home-container{
+        background-color: rgb(29, 29, 29);
+        height: 100vh;
+    }
+    
+    .hero-image img{
+        max-width: 200px;
+        height: auto;
+        border-radius: 50%;
+        border: 4px solid var(--secondary);
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-left: -115px;
+        margin-top: 50px;
+    }
+    .hero-description{
+        line-height: 29px;
+        text-align: center;
+    }
+    .hero-description h1{
+        font-size: 29px;
+        color: var(--navLink);
+        text-transform: uppercase;
+        
+    }
+    .hero-description h2{
+        margin-top: -10px;
+        text-transform: uppercase;
+    }
+    
+    button {
+        
+        line-height: 1.4;
+        border-radius: 35px;
+        
+        text-align: center;
+        cursor: pointer;
+        
+       
+        transition: all .25s ease-in-out;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        
+        padding:16px 35px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+        background-color: transparent;
+        outline: none !important;
+        cursor: pointer !important;
+      }
+    
+      button:hover{
+          background-color: var(--navLink);
+          color: var(--secondary);
+      }
+}

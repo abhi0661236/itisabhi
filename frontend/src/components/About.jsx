@@ -38,7 +38,7 @@ export default class About extends Component {
           </div>
           <div className="info-card">
             <p>Address</p>
-            <h4>Uttar Pradesh</h4>
+            <h4>Uttar Pradesh, India</h4>
           </div>
           <div className="info-card">
             <p>Phone</p>

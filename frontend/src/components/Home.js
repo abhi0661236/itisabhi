@@ -15,8 +15,8 @@ export default class Home extends Component {
           <div className='hero-description'>
             <h1>I'm Abhishek Prajapati.</h1>
             <h2>Web Developer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti enim vitae repellat facere maiores repellendus aspernatur harum molestias libero nihil? Voluptate doloremque, reprehenderit autem esse nam soluta eum obcaecati nihil?
-            
+            <p>
+            I'm a front‑end web developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
             </p>
             <button>Know More</button>
           </div>

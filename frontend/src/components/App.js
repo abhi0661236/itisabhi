@@ -13,7 +13,7 @@ import Blogs from './Blogs';
 function App() {
   return (
     <div className='main'>
-      <Routes>
+      <Routes> // TODO complete the routes
         <Route exact path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/portfolio' element={<Portfolio />} />
