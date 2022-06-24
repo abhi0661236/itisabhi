@@ -1,7 +1,7 @@
 .home-container{
     background-color: rgb(29, 29, 29);
     display: flex;
-    margin-top: 22%;
+    margin-top: 16%;
     padding: 0px 140px;
     justify-content: space-between;
 }
@@ -59,11 +59,11 @@ button {
       color: var(--secondary);
   }
 
-
+/* for tablets */
 @media (max-width: 912px) {
     .home-container{
         background-color: rgb(29, 29, 29);
-        height: 100vh;
+        padding: 20px 0px;
     }
     
     .hero-image img{
@@ -80,6 +80,7 @@ button {
     .hero-description{
         line-height: 29px;
         text-align: center;
+        margin-right: 50px;
     }
     .hero-description h1{
         font-size: 29px;
@@ -118,4 +119,25 @@ button {
           background-color: var(--navLink);
           color: var(--secondary);
       }
+}
+/* for mobiles */
+@media (max-width: 412px) {
+    .home-container{
+        display: block;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .home-container .hero-description{
+        width: 90%;
+        margin: 10px auto;   
+    }
+    .home-container .hero-container{
+        width: 100%;
+    }
+    .home-container .hero-container .hero-image img{
+        top: unset;
+        left: unset;
+        margin-left: 0;
+    }
 }

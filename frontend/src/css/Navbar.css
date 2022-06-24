@@ -5,6 +5,8 @@
     top: 50%;
     right: 0px;
     margin-top: -230px;
+    z-index: 999;
+    
 }
 .nav-panel ul {
     display: inline-block;
@@ -46,12 +48,16 @@ position: relative;
 }
 
 
+/* styles for mobile */
+
 @media (max-width: 912px) {
     .nav-panel{
         position: fixed;width: 100%;background-color: #313131;
         right: 0px;
         left: 0px;
         bottom: 0px;
+        margin-top: 0px;
+        top: unset;
     }
     .nav-panel ul {
         display: flex;
