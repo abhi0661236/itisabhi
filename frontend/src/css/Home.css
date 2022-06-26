@@ -15,6 +15,9 @@
 }
 .hero-container{
     width: 36%;
+    height: 358px;
+    background-color: var(--navLink);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 70% 0%);
 }
 .hero-description{
     line-height: 29px;
@@ -121,7 +124,7 @@ button {
       }
 }
 /* for mobiles */
-@media (max-width: 412px) {
+@media (max-width: 426px) {
     .home-container{
         display: block;
         margin-top: 0;
@@ -134,6 +137,9 @@ button {
     }
     .home-container .hero-container{
         width: 100%;
+        clip-path: unset;
+        background-color: unset;
+        height: auto;
     }
     .home-container .hero-container .hero-image img{
         top: unset;
