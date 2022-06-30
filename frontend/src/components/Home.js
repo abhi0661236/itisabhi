@@ -6,6 +6,7 @@ import HeroImage from './HeroImage';
 
 
 export default class Home extends Component {
+  externalElem = '<h2>Hello I am added through string....</h2>';
   render() {
     return (
       <div className='home-container'>
@@ -17,6 +18,7 @@ export default class Home extends Component {
             <h2>Web Developer</h2>
             <p>
             I'm a front‑end web developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
+            {this.externalElem}
             </p>
             <button>Know More</button>
           </div>
