@@ -3,6 +3,7 @@ import '../css/App.css';
 import {Route,BrowserRouter as Router, Routes} from 'react-router-dom';
 
 import Login from './admin/Login';
+import Signup from './admin/Signup';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
@@ -29,6 +30,7 @@ const adminElem = (
   
   <Routes> 
     <Route path='/admin' element={<Login />} />
+    <Route path='/admin/signup' element={<Signup />} />
   </Routes>
 </Router> 
 );
@@ -36,12 +38,13 @@ const adminElem = (
 function App() {
 
   const path = window.location.pathname;
+  console.log(path.includes('/admin'))
   
 
 
   return (
     <div className='main'>
-      {(path !== '/admin') ? elem : adminElem}
+      {path.includes('/admin') !== true ? elem : adminElem}
     </div>
   );
 }

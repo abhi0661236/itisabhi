@@ -11,6 +11,7 @@ import './styles/Login.css';
 
 function Login() {
     return (
+        <div className='login-form-wrapper'>
         <form>
             <TextField label='Username' variant='filled' required />
             <TextField label='Password' variant='filled' type='password' required />
@@ -22,9 +23,10 @@ function Login() {
                 <Button variant="contained" startIcon={<GoogleIcon />} color="error">
                     Continue with Google
                 </Button>
-                <p>Don't have an account <Link path='/signup'>Create One</Link></p>
+                <p>Don't have an account ? <Button component={Link} to='/admin/signup' >Create One</Button></p>
             </div>
         </form>
+        </div>
     )
 }
 
