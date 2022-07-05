@@ -2,12 +2,13 @@ import Home from './Home';
 import '../css/App.css';
 import {Route,BrowserRouter as Router, Routes} from 'react-router-dom';
 
-import Login from './admin/Login';
+import Dashboard from './admin/Dashboard';
 import Signup from './admin/Signup';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Blogs from './Blogs';
+import Error from './Error';
 import Navbar from './Navbar';
 
 
@@ -20,7 +21,7 @@ const elem = (
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/blogs' element={<Blogs />} />
-        <Route path='/admin' element={<Login />} />
+        <Route path='*' element={<Error />} />
       </Routes>
   </Router>
 );
@@ -29,8 +30,9 @@ const adminElem = (
 <Router>
   
   <Routes> 
-    <Route path='/admin' element={<Login />} />
+    <Route path='/admin' element={<Dashboard />} />
     <Route path='/admin/signup' element={<Signup />} />
+    <Route path='*' element={<Error />} />
   </Routes>
 </Router> 
 );
@@ -38,7 +40,7 @@ const adminElem = (
 function App() {
 
   const path = window.location.pathname;
-  console.log(path.includes('/admin'))
+  // console.log(path.includes('/admin'))
   
 
 

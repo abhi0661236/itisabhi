@@ -1,9 +1,10 @@
-import { Router } from "express";
+import express from "express";
+import {createAdmin, getAdmin} from '../controllers/adminController.js';
 
-const router = Router();
+const router = express.Router();
 
-
-
+router.post('/createadmin', createAdmin);
+router.get('/:username', getAdmin);
 
 
 export default router;
