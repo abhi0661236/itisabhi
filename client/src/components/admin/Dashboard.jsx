@@ -32,7 +32,7 @@ const Dashboard = () => {
                     </Typography>
                 </AppBar>
                 <Grid container spacing={2} className='grid-con' >
-                    <Grid item xs={5}>
+                    <Grid item xs={4}>
                         
                         <Grid className='navitem' item xs={12}>
                         <Button variant='contained' onClick={()=>handleCreatePostClick()}>
@@ -48,7 +48,7 @@ const Dashboard = () => {
                         
                         
                     </Grid>
-                    <Grid id='admin-root' item xs={7}>
+                    <Grid id='admin-root' item xs={8}>
                     
                     </Grid>
                 </Grid>

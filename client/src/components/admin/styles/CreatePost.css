@@ -1,0 +1,52 @@
+.createpost-wrapper{
+    text-align: center;
+    background-color: aqua;
+    width: 100%;
+}
+
+.createpost-wrapper .input-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-top: 20px;
+}
+
+.createpost-wrapper .input-item input{
+    height: 30px;
+}
+.createpost-wrapper .input-item .con-card{
+    display: grid;
+}
+.createpost-wrapper .input-item .con-card div{
+    text-align: right;
+}
+.createpost-wrapper .input-item .create-content-label .add-icon{
+    border: 1px solid black;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.createpost-wrapper .input-item .create-content-label{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+
+}
+.createpost-wrapper .input-item .create-content-label .delete-icon{
+    border: 1px solid black;
+    background-color: rgb(255, 13, 0);
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.createpost-wrapper .create-post-button{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.createpost-wrapper .create-post-button .button:hover{
+    color: rgb(255, 255, 255);
+    background-color: green;
+}

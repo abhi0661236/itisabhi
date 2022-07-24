@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../css/HeroImage.css';
 import Photo from '../profilephoto.jpg';
 
 export default class HeroImage extends Component {

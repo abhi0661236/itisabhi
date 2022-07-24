@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/About.css'
+
 import HeroImage from './HeroImage';
 
 export default class About extends Component {
