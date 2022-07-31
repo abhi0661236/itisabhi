@@ -18,7 +18,7 @@ export default class Home extends Component {
             I'm a front‑end web developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
             
             </p>
-            <button>Know More</button>
+            <button className='main-btn'>Know More</button>
           </div>
       </div>
     )

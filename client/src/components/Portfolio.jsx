@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import kskproject from '../kskProject.png';
+import flpclone from '../flpClone.png';
+import quizproject from '../quizzProject.png';
 
 export default class Portfolio extends Component {
   render() {
@@ -18,8 +21,58 @@ export default class Portfolio extends Component {
         <div className="projects">
           <div className="project-container">
             <div className="project">
-              
+              <img src={kskproject} alt="project krishaksevasansthan" />
+              <div className="project-info">
+                <h3>KRISHAK SEVA SANSTHAN</h3>
+                <hr />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aliquam.</p>
+
+                <div className="project-action">
+                  <button className='second-btn'>
+                    Visit
+                  </button>
+                  <a className="second-btn" href="#">Source Code</a>
+                </div>
+
+              </div>
             </div>
+
+            <div className="project">
+              <img src={flpclone} alt="project krishaksevasansthan" />
+              <div className="project-info">
+                <h3>FLIPKART CLONE</h3>
+                <hr />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aliquam.</p>
+
+                <div className="project-action">
+                  <button className='second-btn'>
+                    Visit
+                  </button>
+                  <a className="second-btn" href="#">Source Code</a>
+                </div>
+
+              </div>
+            </div>
+            <div className="project">
+              <img src={quizproject} alt="project krishaksevasansthan" />
+              <div className="project-info">
+                <h3>QUIZ WEBSITE</h3>
+                <hr />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aliquam.</p>
+
+                <div className="project-action">
+                  <button className='second-btn'>
+                    Visit
+                  </button>
+                  <a className="second-btn" href="#">Source Code</a>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
       </section>
